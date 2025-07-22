@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Container, Paper, Typography, Box, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import surveyJson from '../../data/survey.json';
-import { useState, useCallback, memo } from 'react';
+import { useState, useCallback } from 'react';
 import BMIGraph from './components/BMIGraph';
 import RecommendationCard from './components/RecommendationCard';
 import ActionButtons from './components/ActionButtons';
@@ -10,10 +10,11 @@ import RecommendationList from './components/RecommendationList';
 import { BPCategory } from './types';
 import { GRID_LAYOUT, UNIT_TOGGLE_STYLES, PAPER_STYLES, MAIN_PAPER_STYLES } from './styles';
 
-const MemoizedBMIGraph = memo(BMIGraph);
-const MemoizedRecommendationCard = memo(RecommendationCard);
-const MemoizedActionButtons = memo(ActionButtons);
-
+/** Using an IIFE (Immediately Invoked Function Expression) pattern here to create a closure
+ that encapsulates the categories array. This prevents the array from being recreated
+on each function call, improving performance. The function randomly selects a blood
+pressure category from the available categories in the survey data for simulation.
+**/
 const getSimulatedBpCategory = (() => {
   const categories = Object.keys(surveyJson.survey.bpTest.recommendations) as BPCategory[];
   return (): BPCategory => {
@@ -55,7 +56,7 @@ export default function Results() {
       <Box sx={GRID_LAYOUT}>
         <Box sx={{ gridArea: 'chart' }}>
           <Paper elevation={3} sx={PAPER_STYLES}>
-            <MemoizedBMIGraph answers={answers} />
+            <BMIGraph answers={answers} />
           </Paper>
         </Box>
         
@@ -121,9 +122,9 @@ export default function Results() {
             }}
           >
             <Box sx={{ flexGrow: 1, mb: 3 }}>
-              <MemoizedRecommendationCard answers={answers} bpCategory={bpCategory} recommendation={recommendation} />
+              <RecommendationCard answers={answers} bpCategory={bpCategory} recommendation={recommendation} />
             </Box>
-            <MemoizedActionButtons navigate={handleRetest} />
+            <ActionButtons navigate={handleRetest} />
           </Paper>
         </Box>
       </Box>
