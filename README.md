@@ -29,3 +29,6 @@ Make sure you have **Node.js ≥ 16** and **npm** or **yarn** installed.
 ```bash
 npm install
 npm run dev
+
+## Running the test case
+npm run test
