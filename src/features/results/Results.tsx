@@ -26,9 +26,6 @@ export default function Results() {
   const { answers } = location.state as { answers: Record<string, string> };
   const [unit, setUnit] = useState<'metric' | 'imperial'>('imperial');
 
-  const handleUnitChange = useCallback((_: React.MouseEvent<HTMLElement>, newUnit: 'metric' | 'imperial' | null) => {
-    if (newUnit) setUnit(newUnit);
-  }, []);
 
   const handleRetest = useCallback(() => {
     navigate('/');
@@ -97,7 +94,7 @@ export default function Results() {
               <ToggleButtonGroup
                 value={unit}
                 exclusive
-                onChange={handleUnitChange}
+                onChange={() => {}}
                 aria-label={t('results.unit_toggle')}
                 size="small"
                 sx={UNIT_TOGGLE_STYLES}
@@ -116,7 +113,9 @@ export default function Results() {
               flexDirection: 'column'
             }}
           >
+            <Typography variant="h6" sx={{mb:2}}>{t('results.recommendation_title')}</Typography>
             <Box sx={{ flexGrow: 1, mb: 3 }}>
+             
               <RecommendationCard answers={answers} bpCategory={bpCategory} recommendation={recommendation} />
             </Box>
             <ActionButtons navigate={handleRetest} />

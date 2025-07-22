@@ -122,6 +122,7 @@
     "lifestyle": "Lifestyle Recommendations",
     "medical": "Medical Advice",
     "follow_up": "Follow-up Plan",
+    "recommendation_title": "RECOMMENDATION",
     "unit_label": "Unit",
     "bmi_chart": {
       "title": "Blood Pressure Overview",
