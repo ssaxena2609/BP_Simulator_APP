@@ -28,9 +28,4 @@ Make sure you have **Node.js ≥ 16** and **npm** or **yarn** installed.
 
 ```bash
 npm install
-
-
-**### Run The App Locally**
-
-    ```bash
-    npm run dev
+npm run dev
