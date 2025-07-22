@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Container, Paper, Typography, RadioGroup, Radio, FormControl, FormControlLabel, Box, FormLabel,
-  Button, CircularProgress
+  Button
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import surveyJson from '../../data/survey.json';

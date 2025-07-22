@@ -10,11 +10,6 @@ import RecommendationList from './components/RecommendationList';
 import { BPCategory } from './types';
 import { GRID_LAYOUT, UNIT_TOGGLE_STYLES, PAPER_STYLES, MAIN_PAPER_STYLES } from './styles';
 
-/** Using an IIFE (Immediately Invoked Function Expression) pattern here to create a closure
- that encapsulates the categories array. This prevents the array from being recreated
-on each function call, improving performance. The function randomly selects a blood
-pressure category from the available categories in the survey data for simulation.
-**/
 const getSimulatedBpCategory = (() => {
   const categories = Object.keys(surveyJson.survey.bpTest.recommendations) as BPCategory[];
   return (): BPCategory => {
