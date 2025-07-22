@@ -1,0 +1,231 @@
+{
+  "app": {
+    "title": "SiSU Health Survey"
+  },
+  "language": {
+    "en": "English",
+    "bn": "বাংলা"
+  },
+  "loading": "Loading...",
+  "buttons": {
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit",
+    "retest": "Retest",
+    "metric": "Metric",
+    "imperial": "Imperial"
+  },
+  "survey": {
+    "title": "Health Assessment",
+    "ethnicity": {
+      "question": "What is your ethnic group?",
+      "options": {
+        "white": "White",
+        "mixed": "Mixed or Multiple ethnic groups",
+        "asian": "Asian or Asian British",
+        "black": "Black or Black British, Caribbean or African",
+        "other": "Other ethnic group",
+        "not_said": "Prefer not to say"
+      }
+    },
+    "ethnic_white": {
+      "question": "Please specify:",
+      "options": {
+        "british": "English/Welsh/Scottish/Northern Irish/British",
+        "irish": "Irish",
+        "gypsy": "Gypsy or Irish Traveller",
+        "roma": "Roma",
+        "other_white": "Other white background"
+      }
+    },
+    "ethnic_mixed": {
+      "question": "Please specify:",
+      "options": {
+        "white_black_caribbean": "White and Black Caribbean",
+        "white_black_african": "White and Black African",
+        "white_asian": "White and Asian",
+        "other_mixed": "Other Mixed or Multiple backgrounds"
+      }
+    },
+    "ethnic_asian": {
+      "question": "Please specify:",
+      "options": {
+        "indian": "Indian",
+        "pakistani": "Pakistani",
+        "chinese": "Chinese",
+        "other_asian": "Other Asian backgrounds"
+      }
+    },
+    "ethnic_black": {
+      "question": "Please specify:",
+      "options": {
+        "caribbean": "Caribbean",
+        "african": "African",
+        "other_black": "Other Black"
+      }
+    },
+    "smoking_status": {
+      "question": "Do you smoke?",
+      "options": {
+        "yes": "Yes",
+        "used_to": "Used to",
+        "never": "Never"
+      }
+    },
+    "smoking_frequency": {
+      "question": "How many do you smoke per day?",
+      "options": {
+        "less_than_1": "Less than 1",
+        "1_to_9": "1-9",
+        "10_to_19": "10-19",
+        "20_plus": "20+"
+      }
+    },
+    "quit_timeline": {
+      "question": "When did you quit smoking?",
+      "options": {
+        "less_than_3_months": "Less than 3 months",
+        "3_to_12_months": "3-12 months",
+        "1_to_5_years": "1-5 years",
+        "5_plus_years": "5+ years"
+      }
+    },
+    "recent_bp_measurement": {
+      "question": "Have you had your blood pressure measured in the last 12 months?",
+      "options": {
+        "yes": "Yes",
+        "no": "No"
+      }
+    },
+    "previous_bp_range": {
+      "question": "Was your measurement in the high or at-risk range?",
+      "options": {
+        "yes": "Yes",
+        "no": "No",
+        "dont_remember": "Don't remember"
+      }
+    },
+    "bp_medication": {
+      "question": "Are you currently taking medication for high blood pressure?",
+      "options": {
+        "yes": "Yes",
+        "no": "No"
+      }
+    },
+    "bp_test": {
+      "title": "Blood Pressure Test",
+      "description": "Please take your blood pressure measurement using the provided device."
+    }
+  },
+  "results": {
+    "disclaimer": "This assessment is for informational purposes only and does not replace professional medical advice. Always consult with a healthcare provider for medical decisions.",
+    "lifestyle": "Lifestyle Recommendations",
+    "medical": "Medical Advice",
+    "follow_up": "Follow-up Plan",
+    "unit_label": "Unit",
+    "bmi_chart": {
+      "title": "Blood Pressure Overview",
+      "description": "Your blood pressure reading and recommended actions"
+    },
+    "bmi": {
+      "low": {
+        "label": "Low",
+        "range": "< 18.5"
+      },
+      "normal": {
+        "label": "Normal",
+        "range": "18.5 - 24.9"
+      },
+      "elevated": {
+        "label": "Elevated",
+        "range": "25 - 29.9"
+      },
+      "high": {
+        "label": "High",
+        "range": "30 - 34.9"
+      },
+      "very_high": {
+        "label": "Very High",
+        "range": "35+"
+      }
+    },
+    "recommendation_title": "Recommendation",
+    "follow_up_label": "Follow-up",
+    "categories": {
+      "low": {
+        "title": "Low Blood Pressure",
+        "summary": "Your blood pressure is below normal range. While not always concerning, it's worth monitoring.",
+        "lifestyle": {
+          "0": "Wear compression stockings if recommended by your doctor",
+          "1": "Exercise regularly to improve circulation"
+        },
+        "medical": {
+          "0": "Consult your healthcare provider if you experience dizziness, fainting, or fatigue",
+          "1": "Review current medications with your doctor",
+          "2": "Monitor blood pressure regularly"
+        },
+        "follow_up": "Monitor blood pressure weekly and consult your doctor if symptoms persist."
+      },
+      "normal": {
+        "title": "Normal Blood Pressure",
+        "summary": "Congratulations! Your blood pressure is in the normal range. Keep up the good work with healthy habits.",
+        "lifestyle": {
+          "0": "Maintain a healthy weight",
+          "1": "Limit sodium intake to less than 2,300mg per day",
+          "2": "Exercise for at least 150 minutes per week",
+          "3": "Limit alcohol consumption",
+          "4": "Manage stress through relaxation techniques",
+          "5": "Get 7-9 hours of quality sleep nightly"
+        },
+        "medical": {
+          "0": "Continue regular blood pressure monitoring",
+          "1": "Maintain regular check-ups with your healthcare provider",
+          "2": "Keep track of any family history of hypertension"
+        },
+        "follow_up": "Recheck blood pressure annually or as recommended by your healthcare provider."
+      },
+      "elevated": {
+        "title": "Elevated Blood Pressure",
+        "summary": "Your blood pressure is elevated. This is a warning sign that you may develop high blood pressure without lifestyle changes.",
+        "lifestyle": {
+          "0": "Reduce sodium intake to less than 1,500mg per day",
+          "1": "Increase physical activity to 30 minutes most days",
+          "2": "Lose weight if overweight (even 5-10 pounds can help)",
+          "3": "Limit alcohol to moderate levels",
+          "4": "Quit smoking if you smoke",
+          "5": "Practice stress management techniques",
+          "6": "Follow the DASH diet pattern"
+        },
+        "medical": {
+          "0": "See your healthcare provider within 3-6 months",
+          "1": "Discuss your family history and risk factors",
+          "2": "Consider cardiovascular risk assessment",
+          "3": "Monitor blood pressure at home regularly"
+        },
+        "follow_up": "Recheck blood pressure in 3-6 months. If still elevated, discuss treatment options with your doctor."
+      },
+      "high": {
+        "title": "High Blood Pressure",
+        "summary": "You have Stage 1 high blood pressure. Immediate lifestyle changes and possibly medication are needed.",
+        "lifestyle": {
+          "0": "Reduce sodium to less than 1,500mg daily",
+          "1": "Engage in 40 minutes of moderate-intensity exercise 3-4 times per week",
+          "2": "Achieve and maintain a healthy weight",
+          "3": "Quit smoking immediately if you smoke",
+          "4": "Limit alcohol consumption",
+          "5": "Implement stress reduction strategies",
+          "6": "Follow the DASH eating plan strictly"
+        },
+        "medical": {
+          "0": "Schedule an appointment with your healthcare provider within 1 month",
+          "1": "Discuss medication options with your doctor",
+          "2": "Assess for other cardiovascular risk factors",
+          "3": "Consider additional testing (EKG, blood work)",
+          "4": "Establish a treatment plan with your healthcare team",
+          "5": "Monitor for target organ damage"
+        },
+        "follow_up": "Follow up with healthcare provider in 1 month to assess response to treatment."
+      }
+    }
+  }
+}
